@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body
+        {
+            background-color: rgb(4, 48, 4);
+            color: white;
+            font-family: cursive;
+        }
+
+        .top
+        {
+            position: absolute;
+            top: 70px;
+            left: 240px;
+            display: inline-block;
+            width: 67%;
+            /* border: 2px solid red; */
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        .heading
+        {
+            padding: 2px 2px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .mid
+        {
+            position: absolute;          
+            display: block;
+            top: 150px;
+            left: 450px;
+            width: 32%;
+            margin: 11px auto;
+            padding: 20px 14px;
+            /* border: 2px solid red; */
+        }
+        .form
+        {
+            /* font-weight: bold; */
+            margin-top: 12px;
+            border-radius: 10px;
+            font-size: 35px;
+            font-family: cursive;
+            /* text-align: center; */
+            border: 3px solid black;
+        }
+        .submitbtn
+        {
+            width: 32%;
+            text-align: center;
+            display: block;
+            width: 95%;
+            padding: 5px;
+            border: 3px solid rgb(245, 245, 121);
+            border-radius: 10px;
+            font-size: 35px;
+            font-family: cursive;
+            margin: 30px auto;
+        }
+        .submitbtn:hover
+        {
+            cursor: pointer;
+            background-color: rgb(148, 142, 142);
+        }
+        #gender
+        {
+            width: 430px;
+        }
+
+
+        .back
+        {
+            position: absolute;
+            top: 700px;
+            left: 300px;
+            display: inline-block;
+            width: 10%;
+            /* border: 2px solid red; */
+        }
+        .next
+        {
+            position: relative;
+            top: 693px;
+            left: 925px;
+            display: inline-block;
+            width: 12%;
+            color: white;
+            /* border: 2px solid red; */
+        }
+        .btn
+        {
+            font-family: cursive;
+            font-size: 17px;
+            background-color: rgb(0, 20, 0);
+            color: white;
+            width: 124px;
+            border: 2px solid rgb(245, 245, 121);
+            position: relative;
+            top: 5px;
+            border-radius: 10px;
+        }
+        .btn:hover 
+        {
+            background-color: grey;
+            cursor: pointer;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="top"><h2 class="heading">If you like My Portfolio then fill the form to contact me..</h2></div>
+    <form action="noaction.php">
+    <div class="mid">
+        <input type="text" name="" class="form" id="" placeholder="Enter Your Name">
+        <input type="text" name="" class="form" id="" placeholder="Enter Your Age">
+        <!-- <input type="text" name="" class="form" id="" placeholder="Select Your Gender"> -->
+        <select name="gender" id="gender" class="form">
+            <option value="no-gender">Select Your Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <input type="text" name="" class="form" id="" placeholder="Enter Your Number">
+        <input type="text" name="" class="form" id="" placeholder="Enter Your Address">
+        <input type="text" name="" class="form" id="" placeholder="Enter Your E-Mail">
+        <buttton class="submitbtn">Submit</buttton>
+    </div>
+</form>
+    <div class="back"><a href="portfolio.html"><button class="btn">Back</button></a></div>
+    <div class="next"><a href="#"></a><button class="btn">Next</button></a></div>
+</body>
+</html>
